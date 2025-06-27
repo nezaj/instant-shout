@@ -4,6 +4,14 @@ Simple shout app made w/ InstantDB, Next.js, and Tailwind CSS.
 
 [See it live](https://instant-shout.vercel.app/)
 
+Logic is split across four files:
+
+* `app/page.tsx` - Main logic, mostly UI with some Instant magic :)
+* `lib/db.ts` -- InstantDB client setup
+* `instant.schema.ts` - InstantDB schema, gives you type safety for your data!
+* `instant.perms.ts` - InstantDB permissions, not required for this app, but we
+  still included to show how to restrict access to your data.
+
 ## Quick start
 
 ```bash
