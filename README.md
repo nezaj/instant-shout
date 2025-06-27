@@ -2,6 +2,8 @@
 
 Simple shout app made w/ InstantDB, Next.js, and Tailwind CSS.
 
+[See it live](https://instant-shout.vercel.app/)
+
 ## Quick start
 
 ```bash
