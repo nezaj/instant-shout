@@ -15,15 +15,19 @@ Logic is split across four files:
 ## Quick start
 
 ```bash
-## Instant Shout
-
-Simple shout app made w/ InstantDB, Next.js, and Tailwind CSS.
-
-## Quick start
-
-```bash
 # Clone repo and install dependencies
-pnpx create-nex-app instant-shout -e https://github.com/nezaj/instant-shout
-
-#
+pnpx create-next-app instant-shout -e https://github.com/nezaj/instant-shout
 cd instant-shout
+
+# Create a new InstantDB project
+pnpx instant-cli@latest login # Login to your InstantDB account
+pnpx instant-cli@latest create-app # Paste your app id into env.local
+
+# After copying the app id from the previous step into .env.local, run the
+following command to push the schema and permissions to InstantDB
+pnpx instant-cli@latest push
+
+# Run the app
+pnpm run dev
+```
+
